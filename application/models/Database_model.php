@@ -89,4 +89,7 @@ class Database_model extends CI_Model
             return FALSE;
         }
     }
+    function testProgress()
+    {
+    }
 }

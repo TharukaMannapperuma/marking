@@ -130,11 +130,10 @@
                         </li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Marks Management</span></li>
-
                         <li class="sidebar-item">
                             <a class="sidebar-link" href=<?php echo base_url('marks') ?> aria-expanded="false">
                                 <i class="fa fa-scroll" style="color: rgb(66, 78, 247);"></i>
-                                <span class="hide-menu">Neweset Marks</span>
+                                <span class="hide-menu">All Marks</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
