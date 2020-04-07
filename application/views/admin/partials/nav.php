@@ -131,7 +131,7 @@
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Marks Management</span></li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href=<?php echo base_url('marks') ?> aria-expanded="false">
+                            <a class="sidebar-link" href=<?php echo base_url('marksall') ?> aria-expanded="false">
                                 <i class="fa fa-scroll" style="color: rgb(66, 78, 247);"></i>
                                 <span class="hide-menu">All Marks</span>
                             </a>
@@ -142,24 +142,18 @@
                                 <span class="hide-menu">Add Marks</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link sidebar-link" href=<?php echo base_url('search') ?> aria-expanded="false">
-                                <i class="fa fa-trash" style="color: #ff6565;"></i>
-                                <span class="hide-menu">Remove Marks</span>
-                            </a>
-                        </li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap">
                             <span class="hide-menu">Student Management</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link sidebar-link" href=<?php echo base_url('edit') ?> aria-expanded="false">
+                            <a class="sidebar-link sidebar-link" href=<?php echo base_url('students') ?> aria-expanded="false">
                                 <i class="fa fa-list" style="color: rgb(66, 78, 247);"></i>
                                 <span class="hide-menu">Student List</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link sidebar-link" href="<?php echo base_url('logout'); ?>" aria-expanded="false">
+                            <a class="sidebar-link sidebar-link" href="<?php echo base_url('addstudents'); ?>" aria-expanded="false">
                                 <i class="fa fa-plus" style="color: #90e28c;"></i>
                                 <span class="hide-menu">Add Students</span>
                             </a>

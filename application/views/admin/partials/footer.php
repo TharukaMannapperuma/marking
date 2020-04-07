@@ -27,6 +27,7 @@
 <script src="<?php echo base_url(); ?>dist/js/sidebarmenu.js"></script>
 <!--Custom JavaScript -->
 <script src="<?php echo base_url(); ?>dist/js/custom.min.js"></script>
+<script src="https://kit.fontawesome.com/6d41dc11d3.js" crossorigin="anonymous"></script>
 <!-- Image Crop and upload -->
 <script src="<?php echo base_url(); ?>assets/imageup/croppie.js"></script>
 <!-- DataTable JS -->

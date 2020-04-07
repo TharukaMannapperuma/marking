@@ -58,7 +58,7 @@ $route['logout'] = "login/logOut";
 $route['upload-image'] = "Database/imageUpload";
 
 // here I have removed controller name from URL
-$controller_exceptions = array("index", "login", "marks", "latest", "search", "edit", "profile", "adminprofile", "addmarks"); // here signup is controller function name. You can add as many as controller function names.
+$controller_exceptions = array("index", "login", "marks", "latest", "search", "edit", "profile", "adminprofile", "addmarks", "addstudents", "marksall", "students"); // here signup is controller function name. You can add as many as controller function names.
 
 foreach ($controller_exceptions as $v) {
     $route[$v] = "$default_controller/" . $v;

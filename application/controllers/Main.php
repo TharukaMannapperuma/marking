@@ -142,4 +142,42 @@ class Main extends CI_Controller
 	{
 		$this->load->view("admin/marksadd");
 	}
+	public function addstudents()
+	{
+		$this->load->view("admin/addstudents");
+	}
+	public function students()
+	{
+		if ($this->session->userdata('loggedin')) {
+			$this->load->model('Database_model');
+			$getData = $this->Database_model->allStudents();
+			if ($getData != FALSE) {
+				$user_data['fetched_data'] = $getData;
+				$this->load->view('admin/students', $user_data);
+			} else {
+				$message = "Something Went Wrong, Please Contact Help!";
+				$this->session->set_flashdata('msg', $message);
+				redirect('index');
+			}
+		} else {
+			$this->load->view('login');
+		}
+	}
+	public function marksall()
+	{
+		if ($this->session->userdata('loggedin')) {
+			$this->load->model('Paper_model');
+			$getData = $this->Paper_model->allMarks();
+			if ($getData != FALSE) {
+				$user_data['fetched_data'] = $getData;
+				$this->load->view('admin/marks', $user_data);
+			} else {
+				$message = "Something Went Wrong, Please Contact Help!";
+				$this->session->set_flashdata('msg', $message);
+				redirect('index');
+			}
+		} else {
+			$this->load->view('login');
+		}
+	}
 }

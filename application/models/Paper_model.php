@@ -122,4 +122,14 @@ class Paper_model extends CI_Model
             return FALSE;
         }
     }
+    function allMarks()
+    {
+        $table = "marks";
+        $query = $this->db->get($table);
+        if ($query->num_rows() > 0) {
+            return $query->result();        //Returns an Array of Query Objects
+        } else {
+            return FALSE;
+        }
+    }
 }

@@ -11,7 +11,7 @@
         <div class="col-sm-12 col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Marks Upload - Update / Insert</h4>
+                    <h4 class="card-title">Add/Update Students in Bulk - CSV</h4>
                     <form method="post" id="import_csv" enctype="multipart/form-data">
                         <div class="input-group mb-3">
                             <div class="custom-file">
@@ -45,7 +45,7 @@
 
                 function load_data() {
                     $.ajax({
-                        url: "<?php echo base_url(); ?>csv_import/load_data",
+                        url: "<?php echo base_url(); ?>student_import/load_data",
                         method: "POST",
                         success: function(data) {
                             $('#imported_csv_data').html(data);
@@ -55,7 +55,7 @@
 
                 function err_msg() {
                     $.ajax({
-                        url: "<?php echo base_url(); ?>csv_import/error_msg",
+                        url: "<?php echo base_url(); ?>student_import/error_msg",
                         method: "POST",
                         success: function(data) {
                             $('#imported_csv_data').html(data);
@@ -65,7 +65,7 @@
 
                 function load_old_id() {
                     $.ajax({
-                        url: "<?php echo base_url(); ?>csv_import/old_last_id",
+                        url: "<?php echo base_url(); ?>student_import/old_last_id",
                         method: "POST",
                     })
                 }
@@ -73,7 +73,7 @@
                 $('#import_csv').on('submit', function(event) {
                     event.preventDefault();
                     $.ajax({
-                        url: "<?php echo base_url(); ?>csv_import/import",
+                        url: "<?php echo base_url(); ?>student_import/import",
                         method: "POST",
                         data: new FormData(this),
                         dataType: "json",
