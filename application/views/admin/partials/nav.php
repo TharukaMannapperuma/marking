@@ -124,7 +124,7 @@
 
                         <li class="sidebar-item">
                             <a class="sidebar-link sidebar-link" href=<?php echo base_url('adminprofile') ?> aria-expanded="false">
-                                <i class="fa fa-id-card-alt" style="color: #90e28c;"></i>
+                                <i class="fa fa-id-card-alt"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
@@ -132,13 +132,13 @@
                         <li class="nav-small-cap"><span class="hide-menu">Marks Management</span></li>
                         <li class="sidebar-item">
                             <a class="sidebar-link" href=<?php echo base_url('marksall') ?> aria-expanded="false">
-                                <i class="fa fa-scroll" style="color: rgb(66, 78, 247);"></i>
+                                <i class="fa fa-scroll"></i>
                                 <span class="hide-menu">All Marks</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link" href=<?php echo base_url('addmarks') ?> aria-expanded="false">
-                                <i class="fa fa-plus" style="color: #90e28c;"></i>
+                                <i class="fa fa-plus"></i>
                                 <span class="hide-menu">Add Marks</span>
                             </a>
                         </li>
@@ -148,13 +148,13 @@
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link sidebar-link" href=<?php echo base_url('students') ?> aria-expanded="false">
-                                <i class="fa fa-list" style="color: rgb(66, 78, 247);"></i>
+                                <i class="fa fa-list"></i>
                                 <span class="hide-menu">Student List</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link sidebar-link" href="<?php echo base_url('addstudents'); ?>" aria-expanded="false">
-                                <i class="fa fa-plus" style="color: #90e28c;"></i>
+                                <i class="fa fa-plus"></i>
                                 <span class="hide-menu">Add Students</span>
                             </a>
                         </li>
@@ -164,13 +164,13 @@
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link sidebar-link" href=<?php echo base_url('edit') ?> aria-expanded="false">
-                                <i class="fa fa-cog" style="color: rgb(66, 78, 247);"></i>
+                                <i class="fa fa-cog"></i>
                                 <span class="hide-menu">Account Settings</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link sidebar-link" href="<?php echo base_url('logout'); ?>" aria-expanded="false">
-                                <i class="fa fa-sign-out" style="color: #ff6565;"></i>
+                                <i class="fa fa-sign-out"></i>
                                 <span class="hide-menu">Logout</span>
                             </a>
                         </li>
