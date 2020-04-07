@@ -23,12 +23,12 @@ class Csv_import extends CI_Controller
 		$this->session->unset_userdata('update', 'insert', 'error');
 		$output = '
 		<div class="alert alert-success" role="alert">
-		<i class="fas fa-check"></i> Success!  ' . $update . ' Records Updated,  ' . $insert . ' Records Added
+		<i class="fas fa-check"></i> Success!  ' . $update . ' Records Updated,  ' . $insert . ' Records Inserted
 		</div>
 		
 		<div class="card-header">
-        <h3 style="font-weight: 700;">All Marks</h3>
-        <span>This Table Contains All Marks which are uploaded in the moment</span>
+        <h3 style="font-weight: 700;">Added Marks</h3>
+        <span>This Table Contains All New Marks Inserted.. Updated Marks are not shown</span>
         <div class="card-header-right">
           <ul class="list-unstyled card-option">
             <li><i class="feather icon-maximize full-card"></i></li>
@@ -58,7 +58,7 @@ class Csv_import extends CI_Controller
 		if ($result->num_rows() > 0) {
 			foreach ($result->result() as $row) {
 				$count = $count + 1;
-				$id = $result->num_rows() - $count;
+				$id = $result->num_rows() - $count + 1;
 				$output .= '
 				
 				<tr>
@@ -86,6 +86,7 @@ class Csv_import extends CI_Controller
 	  </div>';
 		echo $output;
 	}
+
 	function error_msg()
 	{
 		$error = $this->session->userdata('error');
@@ -96,10 +97,9 @@ class Csv_import extends CI_Controller
 
 	function import()
 	{
-		$success = TRUE;
 		$file_data = $this->csvimport->get_array($_FILES["csv_file"]["tmp_name"]);
 		foreach ($file_data as $row) {
-			if (0) {
+			if ($row["student"] && $row["class"] && $row["paper"]) {
 				$data[] = array(
 					'student'	=>	$row["student"],
 					'class'		=>	$row["class"],
@@ -111,10 +111,11 @@ class Csv_import extends CI_Controller
 			} else {
 				$updated = array('error' => ' Check Your CSV File again for required Fields..');
 				$this->session->set_userdata($updated);
-				$success = FALSE;
 				break;
 			}
 		}
+		$output = array('rows' => 10);
+		echo json_encode($output);
 		$this->csv_import_model->insert($data);
 	}
 }

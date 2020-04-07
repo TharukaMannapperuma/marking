@@ -76,6 +76,7 @@
                         url: "<?php echo base_url(); ?>csv_import/import",
                         method: "POST",
                         data: new FormData(this),
+                        dataType: "json",
                         contentType: false,
                         cache: false,
                         processData: false,

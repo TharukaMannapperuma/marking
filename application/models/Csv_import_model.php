@@ -19,21 +19,8 @@ class Csv_import_model extends CI_Model
         $this->session->set_userdata($old_id);
     }
 
-    function rows()
-    {
-        echo $this->db->count_all('marks');
-    }
-
-    function process($data)
-    {
-        echo "Test";
-        $this->db->insert("tbl_sample", $data);
-        echo 'done';
-    }
-
     function insert($data)
     {
-
         $update = 0;
         $inserted = 0;
 
