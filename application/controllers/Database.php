@@ -146,6 +146,40 @@ class Database extends CI_Controller
             }
         }
     }
+    public function adminResetPassword()
+    {
+        if ($this->input->post()) {
+            $this->load->model('Database_model');
+            $rules = array(
+                [
+                    'field' => 'newpass',
+                    'label' => 'Password',
+                    'rules' => 'callback_valid_password',
+                ],
+                [
+                    'field' => 'confirmpass',
+                    'label' => 'Repeat Password',
+                    'rules' => 'matches[newpass]',
+                ],
+            );
+            $this->form_validation->set_rules($rules);
+            if ($this->form_validation->run()) {
+                $setData = $this->Database_model->resetPassword();
+                if ($setData) {
+                    $this->session->set_flashdata('edit', 'Password Resetted Successfully!');
+                    redirect('reset');
+                } else {
+                    $message = "Something Went Wrong!";
+                    $this->session->set_flashdata('edit', $message);
+                    redirect('reset');
+                }
+            } else {
+                $message = "Please Check your passwords again!";
+                $this->session->set_flashdata('edit', $message);
+                redirect('reset');
+            }
+        }
+    }
     public function valid_password($password = '')
     {
         $password = trim($password);

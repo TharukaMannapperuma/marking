@@ -1,3 +1,5 @@
+</head>
+
 <body>
     <div class="preloader">
         <div class="lds-ripple">
@@ -120,22 +122,58 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">General</span></li>
-
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href=<?php echo base_url('profile') ?> aria-expanded="false"><i class="fa fa-id-card-alt" style="color: #90e28c;"></i><span class="hide-menu">My Profile</span></a></li>
-                        <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Marks</span></li>
-
-                        <li class="sidebar-item"> <a class="sidebar-link" href=<?php echo base_url('marks') ?> aria-expanded="false"><i class="fa fa-chart-line" style="color: rgb(66, 78, 247);"></i><span class="hide-menu">My Marks & Progress</span></a>
+                        <li class="nav-small-cap">
+                            <span class="hide-menu">General</span>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href=<?php echo base_url('latest') ?> aria-expanded="false"><i class="fa fa-tags" style="color: #ff6565;"></i><span class="hide-menu">Latest Marks (All)</span></a>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link sidebar-link" href=<?php echo base_url('profile') ?> aria-expanded="false">
+                                <i class="fa fa-id-card-alt"></i>
+                                <span class="hide-menu">My Profile</span>
+                            </a>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href=<?php echo base_url('search') ?> aria-expanded="false"><i class="fa fa-search" style="color: #90e28c;"></i><span class="hide-menu">Search Paper</span></a></li>
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap">
+                            <span class="hide-menu">Marks</span>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href=<?php echo base_url('marks') ?> aria-expanded="false">
+                                <i class="fa fa-chart-line"></i>
+                                <span class="hide-menu">My Marks & Progress</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href=<?php echo base_url('latest') ?> aria-expanded="false">
+                                <i class="fa fa-tags"></i>
+                                <span class="hide-menu">Latest Marks (All)</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link sidebar-link" href=<?php echo base_url('search') ?> aria-expanded="false">
+                                <i class="fa fa-search"></i>
+                                <span class="hide-menu">Search Paper</span>
+                            </a>
+                        </li>
 
                         <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Extra</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href=<?php echo base_url('edit') ?> aria-expanded="false"><i class="fa fa-cog" style="color: #90e28c;"></i><span class="hide-menu">Account Settings</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="<?php echo base_url('logout'); ?>" aria-expanded="false"><i class="fa fa-sign-out" style="color: #ff6565;"></i><span class="hide-menu">Logout</span></a></li>
+                        <li class="nav-small-cap">
+                            <span class="hide-menu">Extra</span>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link sidebar-link" href=<?php echo base_url('edit') ?> aria-expanded="false">
+                                <i class="fa fa-cog"></i><span class="hide-menu">Account Settings</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link sidebar-link" href=<?php echo base_url('help') ?> aria-expanded="false">
+                                <i class="fas fa-hands-helping" style="color: red;"></i><span class="hide-menu">Help</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link sidebar-link" href="<?php echo base_url('logout'); ?>" aria-expanded="false">
+                                <i class="fa fa-sign-out"></i><span class="hide-menu">Logout</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

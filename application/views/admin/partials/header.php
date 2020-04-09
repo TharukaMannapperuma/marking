@@ -31,7 +31,7 @@ if (!($this->session->userdata('loggedin')) || ($this->session->userdata('user_t
     <!-- Custom CSS -->
     <link href="<?php echo base_url(); ?>dist/css/style.min.css" rel="stylesheet" />
     <link href="<?php echo base_url(); ?>assets/css/dash.cards.css" rel="stylesheet" />
-
+    <!-- Bootstrap -->
     <!-- DataTable CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/datatable/datatables.net-bs4/css/dataTables.bootstrap4.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/datatable/data-table/css/buttons.dataTables.min.css" />

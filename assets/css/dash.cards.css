@@ -43,3 +43,13 @@
 .f-right {
   float: right;
 }
+.modal-content {
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  border-radius: 10px !important;
+}
+.card-header {
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  border-radius: 20px !important;
+}

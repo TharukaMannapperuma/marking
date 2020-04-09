@@ -13,10 +13,11 @@ if (($this->session->userdata('loggedin'))) {
 <html>
 
 <head>
-	<title>Animated Login Form</title>
+	<title>Darshana Ukuwela - Physics Foundation</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/login/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="<?php echo base_url(); ?>assets/img/brand/favicon.png" type="image/png" />
 </head>
 
 <body>

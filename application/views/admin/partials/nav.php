@@ -85,20 +85,8 @@
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="<?php echo base_url() . $this->session->image; ?>" alt="user" class="rounded-circle" width="40" />
                                 <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span>
-                                    <span class="text-dark"><?php echo $this->session->userdata('fname') ?></span>
-                                    <i data-feather="chevron-down" class="svg-icon"></i></span>
+                                    <span class="text-dark"><?php echo $this->session->userdata('uname') ?></span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
-                                <a class="dropdown-item" href=<?php echo base_url('profile') ?>><i data-feather="user" class="svg-icon mr-2 ml-1"></i> My
-                                    Profile</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=<?php echo base_url('edit') ?>><i data-feather="settings" class="svg-icon mr-2 ml-1"></i>
-                                    Account Setting</a>
-                                <div class="dropdown-divider"></div>
-                                <div class="pl-4 p-3">
-                                    <a href="<?php echo base_url('logout'); ?>" class="btn btn-rounded btn-info"><i class="fa fa-sign-out">&nbsp;</i>Logout</a>
-                                </div>
-                            </div>
                         </li>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
@@ -163,9 +151,9 @@
                             <span class="hide-menu">Extra</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link sidebar-link" href=<?php echo base_url('edit') ?> aria-expanded="false">
+                            <a class="sidebar-link sidebar-link" href=<?php echo base_url('reset') ?> aria-expanded="false">
                                 <i class="fa fa-cog"></i>
-                                <span class="hide-menu">Account Settings</span>
+                                <span class="hide-menu">Reset Password</span>
                             </a>
                         </li>
                         <li class="sidebar-item">

@@ -111,6 +111,10 @@ class Main extends CI_Controller
 	public function editnew()
 	{
 	}
+	public function help()
+	{
+		$this->load->view('student/help');
+	}
 	// Admin Portion of the main controller
 	public function adminprofile()
 	{
@@ -179,5 +183,9 @@ class Main extends CI_Controller
 		} else {
 			$this->load->view('login');
 		}
+	}
+	public function reset()
+	{
+		$this->load->view('admin/reset');
 	}
 }

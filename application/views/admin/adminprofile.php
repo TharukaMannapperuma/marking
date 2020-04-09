@@ -50,7 +50,7 @@
         </a>
       </div>
       <div class="col-md-4 col-xl-3">
-        <a href="admin_remove.php">
+        <a href=<?php echo base_url('students') ?>>
           <div class="card bg-c-pink order-card">
             <div class="card-block">
               <div>
@@ -73,8 +73,8 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">No of Students in each class</h4>
-            <div>
-              <canvas id="pie-chart" height="100"></canvas>
+            <div class="chart-container" style="position: relative;">
+              <canvas id="pie-chart" height="100px"></canvas>
             </div>
           </div>
         </div>
@@ -94,12 +94,14 @@
             labels: chartData.labels,
             datasets: [{
               label: chartData.labels,
-              backgroundColor: ["#03dbfc", "#03fc8c", "#fc0390", "#8fa0f3"],
+              backgroundColor: ["#03dbfc", "#03fc8c", "#fc0390", "#8fa0f3", '#34ebb7'],
               data: chartData.count
             }]
           },
           options: {
             title: {
+              maintainAspectRatio: false,
+              responsive: true,
               display: true,
               text: "Classes"
             }
