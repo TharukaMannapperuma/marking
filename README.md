@@ -4,3 +4,12 @@
 ## Marking Upload Website
 
 ### Introduction
+This is a small project done with Codeigniter 3 PHP framework and you can visit the sample website using https://marking.projects.com.lk URL.
+
+### Logins
+1. Admin
+   -Username - tharuka
+   -Password - Password@123
+2. User
+   -Username - 2111001
+   -Password - 2111001
