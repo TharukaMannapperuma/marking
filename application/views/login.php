@@ -55,11 +55,6 @@ if (($this->session->userdata('loggedin'))) {
 				echo "<span style='font-family: Coronetscript, cursive; color:red;'>" . $this->session->flashdata('msg') . "</span>";
 			} ?>
 			<span style="font-family: Coronetscript, cursive; color:red;"><?php echo validation_errors(); ?></span>
-			<h1>Dummy Accounts</h1>
-			<h3>Admin</h3>
-			<h5>UN:tharuka, PW:Password@123</h5>
-			<h3>User</h3>
-			<h5>UN:2111001, PW:2111001</h5>
 			<?php echo form_close(); ?>
 		</div>
 	</div>
