@@ -8,8 +8,8 @@ This is a small project done with Codeigniter 3 PHP framework and you can visit 
 
 ### Logins
 1. Admin
-   -Username - tharuka
-   -Password - Password@123
+   - Username - tharuka
+   - Password - Password@123
 2. User
-   -Username - 2111001
-   -Password - 2111001
+   - Username - 2111001
+   - Password - 2111001
